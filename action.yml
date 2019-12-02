@@ -1,0 +1,12 @@
+name: 'action-adjust-commented-label'
+description: 'Label issues that have been commented on so they get reviewed if necessary.'
+branding:
+  icon: 'move'  
+  color: 'purple'
+inputs:
+  action-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
